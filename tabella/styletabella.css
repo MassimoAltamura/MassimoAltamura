@@ -1,0 +1,44 @@
+table {
+    border: 1px solid #263238;
+    width: 50%;
+    margin: 20px auto; /* Centra la tabella e aggiunge margine */
+    border-collapse: collapse; /* Unisce i bordi delle celle */
+}
+
+caption {
+    color: #263238;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px; /* Aggiunge spazio tra il titolo e la tabella */
+}
+
+thead th {
+    background-color: #455a64;
+    color: white;
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eceff1;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #b0bec5;
+}
+
+tfoot tr {
+    background-color: #78909c;
+    font-weight: 800;
+}
+
+tbody td:nth-child(2) {
+    color: #003300; /* Colore testo per la colonna delle entrate */
+}
+
+tbody td:nth-child(3) {
+    color: #7f0000; /* Colore testo per la colonna delle uscite */
+}
+
+tbody td {
+    text-align: right; /* Allinea i valori numerici a destra */
+}
