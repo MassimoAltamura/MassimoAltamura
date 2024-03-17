@@ -20,7 +20,7 @@ nav h1 {
 }
 
 nav ul {
-    list-style: none ; 
+    list-style: none;
     color: black;
     padding: 0;
     margin: 0;
@@ -49,6 +49,12 @@ nav a {
     padding: 10px 20px;
     border: solid 1px green;
     background: black;
+}
+
+
+.bottone:hover {
+    background: green;
+    color: black;
 }
 
 .Dropdown {
