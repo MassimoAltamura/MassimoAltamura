@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  padding: 1.5em; /* Riduciamo leggermente il padding */
+  margin: 1em;
+  flex-grow: 1; /* Tutti i blocchi occupano la stessa quantità di spazio */
+}
+
+#yellow {
+  background-color: #ffff92;
+  order: 1;
+}
+
+#red {
+  background-color: #ff919c;
+  order: 2;
+}
+
+#green {
+  background-color: #8ffda7;
+  order: 3;
+}
+
+#orange {
+  background-color: #ffc788;
+  order: 4;
+  flex-grow: 2; /* Questo blocco si espanderà di più rispetto agli altri */
+}
+
+#blue {
+  background-color: #98d2ff;
+  order: 5;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  margin: 1em;
+}
