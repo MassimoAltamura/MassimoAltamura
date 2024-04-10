@@ -1,30 +1,27 @@
-
 const addTask = () => {
-  const taskInput = document.getElementById('taskInput');
-  const taskList = document.getElementById('taskList');
+  const taskInput = document.getElementById("taskInput");
+  const taskText = taskInput.value.trim();
 
- 
-  const listItem = document.createElement('li');
-  const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
+  if (taskText !== "") {
+    const taskList = document.getElementById("taskList");
 
-  
-  listItem.innerText = taskInput.value;
+    
+    const taskItem = document.createElement("li");
 
-    checkbox.addEventListener('change', function () {
-    if (this.checked) {
-      listItem.classList.add('completed');
-    } else {
-      listItem.classList.remove('completed');
-    }
-  });
+      const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
 
-  
-  listItem.appendChild(checkbox);
+    
+    const taskTextNode = document.createTextNode(taskText);
 
-  
-  taskList.appendChild(listItem);
+    
+    taskItem.appendChild(checkbox);
+    taskItem.appendChild(taskTextNode);
 
-  
-  taskInput.value = '';
+    
+    taskList.appendChild(taskItem);
+
+    // Reset dell'input
+    taskInput.value = "";
+  }
 };
