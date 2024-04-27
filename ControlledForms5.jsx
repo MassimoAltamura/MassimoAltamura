@@ -15,7 +15,7 @@ function LoginForm() {
   };
 
   return (
-    <div>
+    <form onSubmit={handleLogin}>
       <div>
         <span>Username:</span>
         <input
@@ -34,9 +34,10 @@ function LoginForm() {
         />
       </div>
       <br />
-      <button type="submit" onClick={handleLogin}>Login</button>
-    </div>
+      <button type="submit">Login</button>
+    </form>
   );
 }
 
 export default LoginForm;
+
