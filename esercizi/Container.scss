@@ -1,0 +1,16 @@
+.container {
+    background-color: white;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+  
+    h2 {
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+  
+    .content {
+      display: block;
+    }
+  }
+  
