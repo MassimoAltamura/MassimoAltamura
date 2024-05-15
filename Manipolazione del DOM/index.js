@@ -1,27 +1,24 @@
-const addTask = () => {
-  const taskInput = document.getElementById("taskInput");
-  const taskText = taskInput.value.trim();
-
-  if (taskText !== "") {
-    const taskList = document.getElementById("taskList");
-
+const addProduct = () => {
+  
     
-    const taskItem = document.createElement("li");
-
-      const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-
+    const input = document.querySelector('input[type="text"]');
+    const task = input.value;
+  
     
-    const taskTextNode = document.createTextNode(taskText);
+    if (task !== "") {
+      
+      const li = document.createElement("li");
+  
+      
+      li.innerHTML = `<input type="checkbox" class="task-checkbox"> ${task}`;
+  
+      
+      const ul = document.querySelector("ul");
+      ul.appendChild(li);
+  
+      
+      input.value = "";
+    }
+  };
+  
 
-    
-    taskItem.appendChild(checkbox);
-    taskItem.appendChild(taskTextNode);
-
-    
-    taskList.appendChild(taskItem);
-
-    // Reset dell'input
-    taskInput.value = "";
-  }
-};
