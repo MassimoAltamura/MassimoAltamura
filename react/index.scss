@@ -1,0 +1,21 @@
+.container {
+    background: white;
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .container-title {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .container-content {
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .container-content-hidden {
+    display: none;
+  }
+  
