@@ -1,0 +1,5 @@
+DELETE FROM Books
+WHERE BookID = 101;
+
+COMMIT;
+
